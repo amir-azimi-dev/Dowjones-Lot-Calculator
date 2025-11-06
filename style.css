@@ -1,0 +1,106 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 3rem 0;
+    background-color: #101010;
+    color: #fff;
+    font-family: "Vazir";
+}
+
+h1 {
+    margin-bottom: 1rem;
+    font-size: 3rem;
+    font-weight: bold;
+}
+
+.inputs,
+.output {
+    width: 100%;
+    max-width: 50rem;
+    padding: 3rem;
+    background-color: #474646;
+    border-radius: 1rem;
+}
+
+.inputs {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+    margin-bottom: 3rem;
+}
+
+.input-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.input-container label {
+    font-weight: 600;
+}
+
+input {
+    padding: 0.6rem 1rem;
+    border-radius: 0.4rem;
+    border: none;
+    outline: none;
+    font-weight: bold;
+    font-size: 1rem;
+}
+
+input:focus {
+    border: none;
+    outline: none;
+}
+
+button {
+    grid-column: 1 / 3;
+    margin-top: 1rem;
+    padding: 0.6rem 2rem;
+    border-radius: 0.4rem;
+    font-size: 1rem;
+    font-weight: bold;
+    background-color: transparent;
+    color: #e1b208;
+    border: 3px solid #e1b208;
+    cursor: pointer;
+    transition: all 0.1s linear;
+}
+
+button:hover {
+    background-color: #e1b208;
+    color: #fff;
+}
+
+h2 {
+    margin-bottom: 2rem;
+    padding-bottom: 0.2rem;
+    border-bottom: 1px solid #fff;
+    text-align: center;
+    font-size: 1.7rem;
+    font-weight: bold;
+    color: #fff;
+}
+
+.result-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1rem;
+    padding: 0 0.5rem;
+    padding-bottom: 1rem;
+    border-bottom: 1px solid #6b6b6b;
+}
+
+.result-container>p {
+    font-size: 1.4rem;
+    font-weight: bold;
+}

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Dowjones Lot Calculator</title>
+</head>
+
+<body>
+    <h1>Dowjones Lot Calculator</h1>
+
+    <div class="inputs">
+        <div class="input-container">
+            <label for="balance-input">Balance ($)</label>
+            <input type="number" min="0" id="balance-input" placeholder="1000">
+        </div>
+
+        <div class="input-container">
+            <label for="risk-percentage-input">Risk Percentage</label>
+            <input type="number" min="0" max="100" id="risk-percentage-input" placeholder="2">
+        </div>
+
+        <div class="input-container">
+            <label for="stop-pips-input">Protective Stop (pip)</label>
+            <input type="number" min="0" id="stop-pips-input" placeholder="20">
+        </div>
+
+        <div class="input-container">
+            <label for="pip-value-per-lot-input">Pip Value Per 1 Lot ($)</label>
+            <input type="number" min="0" id="pip-value-per-lot-input" placeholder="10">
+        </div>
+
+        <button>Calculate</button>
+    </div>
+
+
+    <div class="output">
+        <h2>Results</h2>
+
+        <div class="result-container">
+            <h3>Lot:</h3>
+            <p class="lot-value">0</p>
+        </div>
+
+        <div class="result-container">
+            <h3>Risk ($):</h3>
+            <p class="risk-value">0</p>
+        </div>
+
+        <div class="result-container"v>
+            <h3>Pip Value ($):</h3>
+            <p class="pip-value">0</p>
+        </div>
+    </div>
+
+    <script src="./app.js"></script>
+</body>
+
+</html>
