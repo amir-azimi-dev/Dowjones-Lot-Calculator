@@ -44,5 +44,5 @@ calculateButtonElem.addEventListener("click", () => {
 
 window.addEventListener("load", () => {
     riskPercentageInputElem.value = 2;
-    pipValuePerLotInputElem.value = 10;
+    pipValuePerLotInputElem.value = 1;
 });
